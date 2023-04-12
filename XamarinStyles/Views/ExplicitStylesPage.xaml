@@ -12,6 +12,12 @@
                 <Setter Property="FontSize" Value="Large" />
                 <Setter Property="TextColor" Value="Red" />
             </Style>
+
+            <Style x:Key="BlueLabelStyle" TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Blue" />
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -29,6 +35,21 @@
             Style="{StaticResource RedLabelStyle}"
             Text="Label with explicit Style &quot;RedLabelStyle&quot; and overridden TextColor"
             TextColor="Blue" />
+
+        <!-- Demo: Styles can be overridden along the hierarchy -->
+        <StackLayout>
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style x:Key="BlueLabelStyle" TargetType="Label">
+                        <Setter Property="TextColor" Value="Magenta" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+
+            <Label
+                Style="{StaticResource BlueLabelStyle}"
+                Text="Label with explicit Style &quot;BlueLabelStyle&quot;" />
+        </StackLayout>
 
     </StackLayout>
 </ContentPage>
