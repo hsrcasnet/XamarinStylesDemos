@@ -38,6 +38,7 @@
             Text="Entry with implicit Style and overridden TextColor"
             TextColor="Blue" />
 
+        <!-- Demo: CustomEntry is not affected by the implicit style as long as ApplyToDerivedTypes="True" is not set -->
         <controls:CustomEntry Text="CustomEntry" />
 
     </StackLayout>
