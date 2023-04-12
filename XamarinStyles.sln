@@ -7,13 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinStyles.Android", "Xa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinStyles.iOS", "XamarinStyles.iOS\XamarinStyles.iOS.csproj", "{ABC2741C-E8BE-4BF1-881C-7C4069D290B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinStyles", "XamarinStyles\XamarinStyles.csproj", "{783B3851-06CD-415F-84C1-139375762B6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinStyles", "XamarinStyles\XamarinStyles.csproj", "{783B3851-06CD-415F-84C1-139375762B6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{352B72BB-DDC6-4733-B798-A641778E83BB}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		clean.bat = clean.bat
+		README.md = README.md
 		Settings.XamlStyler = Settings.XamlStyler
 	EndProjectSection
 EndProject
