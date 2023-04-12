@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinStyles.Views.ImplicitStylesPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XamarinStyles.Controls"
+    Title="Implicit Styles">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Red" />
+            </Style>
+
+            <!-- Demo: ApplyToDerivedTypes also affects inherited controls (e.g. CustomEntry) -->
+            <!--<Style TargetType="Entry" ApplyToDerivedTypes="True">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Red" />
+            </Style>-->
+
+            <!-- Demo: Implicit style for custom control -->
+            <!--<Style TargetType="controls:CustomEntry">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Magenta" />
+            </Style>-->
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout
+        Padding="20"
+        Spacing="40">
+
+        <Entry Text="Entry with implicit Style" />
+
+        <Entry
+            Text="Entry with implicit Style and overridden TextColor"
+            TextColor="Blue" />
+
+        <controls:CustomEntry Text="CustomEntry" />
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinStyles.Views.GlobalStylesPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Global Styles">
+
+    <StackLayout
+        Padding="20"
+        Spacing="40">
+
+        <Button Text="Button with implicit global Style" />
+
+        <Button
+            IsEnabled="False"
+            Text="Button with implicit global Style (Disabled)" />
+
+        <Button
+            Style="{StaticResource SecondaryButtonStyle}"
+            Text="Button with explicit global Style &quot;SecondaryButtonStyle&quot;" />
+
+        <Button
+            IsEnabled="False"
+            Style="{StaticResource SecondaryButtonStyle}"
+            Text="Button with explicit global Style &quot;SecondaryButtonStyle&quot; (Disabled)" />
+
+    </StackLayout>
+</ContentPage>
