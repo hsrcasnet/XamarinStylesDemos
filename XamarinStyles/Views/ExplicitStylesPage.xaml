@@ -33,8 +33,12 @@
 
         <Label
             Style="{StaticResource RedLabelStyle}"
-            Text="Label with explicit Style &quot;RedLabelStyle&quot; and overridden TextColor"
+            Text="Label with explicit Style &quot;RedLabelStyle&quot;"
             TextColor="Blue" />
+
+        <Label
+            Style="{StaticResource BlueLabelStyle}"
+            Text="Label with explicit Style &quot;BlueLabelStyle&quot;" />
 
         <!-- Demo: Styles can be overridden along the hierarchy -->
         <StackLayout>
